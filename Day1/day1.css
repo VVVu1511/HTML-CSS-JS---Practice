@@ -1,0 +1,63 @@
+
+
+#b1e1{
+    font-size: 100px;
+}
+
+#b1e2{
+    font-size: 50px;
+}
+
+#b2{
+    background-image: url("../image/anime_girl_pink.jpg");
+    background-size: cover;
+    width: 500px;
+    height: 500px;
+    position: relative;
+}
+
+#b2e1{
+    background-color: white;
+    position: absolute;
+    font-size: 50px;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    mix-blend-mode: saturation;
+}
+
+#b3{
+    background-color: black;
+    width: 500px;
+    height: 200px;
+    position: relative;
+}
+
+#b3e1{
+    color: pink;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    font-size: 30px;
+    top: 50%;
+    left: 50%;
+    box-shadow:rgb(from pink);
+}
+
+
+@media (width <= 1201px){
+    #b1e1,#b1e2{
+        font-size: 50px;
+        color: red;
+        font-style: italic;
+        font-weight: bold;
+    }
+}
+
+@media (width >= 1200px){
+    #b1e1,#b1e2{
+        font-size: 30px;
+        color: purple;
+        opacity: 60%;
+    }
+}
