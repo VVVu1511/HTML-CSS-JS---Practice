@@ -1,0 +1,48 @@
+#b1{
+    position: relative;
+}
+
+.b1list{
+    text-decoration: none;
+    list-style: none;
+    background-color: #ccc;
+    width: 150px;
+    padding: 0;
+    display: none;
+    position: absolute;
+}
+
+.b1listitem{
+    height: 40px;
+    line-height: 40px;
+    color: black;
+    text-align: center;
+    cursor: pointer;
+}
+
+.b1dropup{
+    background-color: blue;
+    text-align: center;
+    color: white;
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    cursor: pointer;
+    position: absolute;
+    top: 135px;
+}
+
+.b1dropup:hover ~ .b1list{
+    display: block;
+}
+
+.b1list:hover{
+    display: block;
+}
+
+.b1listitem:hover{
+    background-color: #555555;
+}
+
+
+

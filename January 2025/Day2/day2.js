@@ -14,6 +14,9 @@ function b5switchButton(){
             all_papers[pre_active].classList.remove('b5-activated-paper');
             all_papers[active].classList.add('b5-activated-paper');
         });
+        all_buttons[i].addEventListener('mouseover',()=>{
+            all_buttons[active].classList.add('b5-activated-button');
+        });
     }
 
 }
@@ -21,3 +24,10 @@ function b5switchButton(){
 
 
 b5switchButton();
+
+
+let array = [1,2,3,4];
+
+array.sort(function(a,b){return b - a});
+
+console.log(array);
