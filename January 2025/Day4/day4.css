@@ -3,6 +3,10 @@ body{
     margin: 0;
 }
 
+.section{
+    position: relative;
+}
+
 .big{
     width: 400px;
     height: 400px;
@@ -31,3 +35,111 @@ body{
 #b2 > .e1:hover ~ .text{
     display: block;
 }
+
+#b3 > .list{
+    list-style: none;
+    padding: 0;
+}
+
+#b3 > .list > li{
+    background-color: #ccc;
+    border: .5px solid black;
+    cursor: pointer;
+    padding: 5px 0 5px 5px;
+}
+
+#b3 > .list > li:hover{
+    background-color: #ccccccc2;
+}
+
+
+#b4{
+    position: relative;
+}
+
+#b4 > .background{
+    background-image: url(../image/anime_girl_pink.jpg);
+    background-size: cover;
+    width: 500px;
+    height: 500px;
+    position: absolute;
+}
+
+#b4 > .navbar{
+    display: flex;
+    list-style: none;
+    position: absolute;
+    margin: 0;
+    top: 20px;
+    left: 20px;
+    background-color: red;
+    padding: 0;
+}
+
+#b4 > .navbar > .item{
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.76);
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#b4 > .navbar > .item:hover{
+    background-color: #ccc;
+}
+
+#b5 > .image{
+    background-image: url(../image/anime_girl_pink.jpg);
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+}
+
+#b5 > .image:hover{
+    opacity: 70%;
+}
+
+.modal{
+    position: absolute;
+    width: 100%;    
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+    display: none;
+    z-index: 1;
+}
+
+.modal > .big_picture{
+    background-image: url(../image/anime_girl_pink.jpg);
+    background-size: cover;
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.modal > .description{
+    font-size: 20px;
+    color: white;
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.modal > .button_out{
+    font-size: 50px;
+    color: white;
+    position: absolute;
+    right: 3%;
+    top: 33%;
+    cursor: pointer;
+}
+
+.modal > .button_out:hover{
+    color: #ccc;
+}
+
+
