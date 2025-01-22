@@ -4,6 +4,16 @@ function addOneDeleteTasks(delete_block,tasks,list_item){
     });
 }
 
+function addOneDoneTask(element,tick,horizontal){
+    element.addEventListener('click',()=>{
+        element.style.backgroundColor = 'gray';
+        
+        tick.style.display = 'block';
+        horizontal.style.display = 'block';
+        tick.style.borderRightWidth = `${element.textContent.length * parseFloat(window.getComputedStyle(element).fontSize) * 0.6}px`;
+    });
+}
+
 function deleteTasks(){
     delete_blocks = document.querySelectorAll('.delete');
     tasks = document.querySelector('.tasks');
@@ -31,9 +41,9 @@ function addTasks(){
             delete_text.textContent = 'x';
             new_task.textContent = text;
 
+            new_task.appendChild(tick);
+            new_task.appendChild(horizontal);
             delete_task.appendChild(delete_text);
-            delete_task.appendChild(tick);
-            delete_task.appendChild(horizontal);
             new_task.appendChild(delete_task);
             tasks.appendChild(new_task);
 
@@ -44,16 +54,19 @@ function addTasks(){
             new_task.classList.add('test');
 
             addOneDeleteTasks(delete_task,tasks,new_task);
+            addOneDoneTask(new_task,tick,horizontal);
         }
     });
 }
 
 function doneTasks(){
     list_items = document.querySelectorAll('.test');
+    tick_lists = document.querySelectorAll('.tick');
+    horizontal_lists = document.querySelectorAll('.horizontal');
 
-    list_items.forEach((element),()=>{
-
-    });
+    for(let i = 0; i < list_items.length; i++){
+        addOneDoneTask(list_items[i],tick_lists[i],horizontal_lists[i]);
+    }
 }
 
 
