@@ -1,0 +1,121 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+#b1{
+    width: 1000px;
+}
+
+#b1 > .input_section{
+    background-color: red;
+    height: 160px;  
+    box-sizing: border-box;
+    position: relative;
+}
+
+.input_section > p{
+    position: absolute;
+    font-size: 20px;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+}
+
+.input_section_input{
+    position: absolute;
+    top: 50%;
+    left: 3%;
+}
+
+.input_section_input > .add{
+    cursor: pointer;
+    padding: 10px;
+    background-color: #ccc;
+    width: 200px;
+}
+
+.input_section_input > .add:hover{
+    background-color: rgb(0, 0, 0);
+}
+
+.input_section_input > input{
+    width: 700px;
+    margin: 0;
+    padding: 10px;
+}
+
+.tasks{
+    list-style: none;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+.tasks > li{
+    padding: 15px 15px 15px 40px;
+    margin: 0;
+    cursor: pointer;
+}
+
+
+.tasks > li:nth-child(odd){
+    background-color: aliceblue;
+}
+
+.tasks > li:nth-child(even){
+    background-color: #ccc;
+}
+
+.tasks > li:hover{
+    background-color: aqua;
+}
+
+.tasks > .test > .delete{
+    position: absolute;
+    height: 100%;   
+    right: 0;
+    top: 0;
+    cursor: pointer;
+    width: 50px;
+}
+
+.tasks .delete > .delete_text{
+    position: absolute;
+    right: 21px;
+    color: black;
+}
+
+.tasks > .test > .delete:hover{
+    background-color: red;
+}
+
+.tick::before{
+    content: "";
+    border: 1px solid white;
+    border-width: 0px 70px 2px 0px;
+    position: absolute;
+    left: 40px;
+    top: 50%;
+    display: none;
+}
+
+.horizontal:before{
+    content: "";
+    border: 2px solid yellow;
+    width: 5px;
+    height: 10px;
+    border-width: 0 3px 3px 0;
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translate(-50%,-50%) rotate(45deg);
+    display: none;
+}
+
+/*chan le mau khac*/
+
+
+
