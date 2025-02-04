@@ -115,6 +115,8 @@ async function main(){
     // await bai4();
     // console.log("Bai5");
     // await bai5();
+    let name = "Vu Van Vu";
+    console.log(name[4]);
 }
 
 main();
