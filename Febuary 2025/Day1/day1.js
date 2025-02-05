@@ -57,46 +57,49 @@
 
 // console.log(test);
 
-async function fetchData(){
-    return new Promise((resolve,reject) => {
-        setTimeout(() => {
-            const data = {name: 'Vu',age: 18};
-            resolve(data);
-        },1000);
-    });
-}
+// async function fetchData(){
+//     return new Promise((resolve,reject) => {
+//         setTimeout(() => {
+//             const data = {name: 'Vu',age: 18};
+//             resolve(data);
+//         },1000);
+//     });
+// }
 
-async function handleData(){
-    try{
-        const data = await fetchData();
-        console.log('Received data',data);
-    }
-    catch(error){
-        console.log("Error: ",error);
-    }
-}
+// async function handleData(){
+//     try{
+//         const data = await fetchData();
+//         console.log('Received data',data);
+//     }
+//     catch(error){
+//         console.log("Error: ",error);
+//     }
+// }
 
-function inProgress(){
-    console.log("In Progress ...");
-}
+// function inProgress(){
+//     console.log("In Progress ...");
+// }
 
 
-handleData();
+// handleData();
 
-for(let i = 0; i < 1000; i++) inProgress();
+// for(let i = 0; i < 1000; i++) inProgress();
 
-let first = setInterval(() => {
-    console.log('hello');
-},1000);
+// let first = setInterval(() => {
+//     console.log('hello');
+// },1000);
 
-setTimeout(() => {
-    clearInterval(first);
-    console.log('sleeping time');
-}
-,6000);
+// setTimeout(() => {
+//     clearInterval(first);
+//     console.log('sleeping time');
+// }
+// ,6000);
 
-const hi = () => {
-    console.log('wow');
-}
+// const hi = () => {
+//     console.log('wow');
+// }
 
-hi();
+// hi();
+
+
+console.log('hello');
