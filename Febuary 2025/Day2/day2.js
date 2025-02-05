@@ -54,6 +54,46 @@
 
 // console.log(myVehicle(a,b,c,d));
 
+// var hehe = function(){
+//     let cnt = 0;
+
+//     return function(){
+//         cnt++;
+//         console.log(cnt);
+//     }
+// }
+
+// const v = hehe();
+
+// v();
+// v();
+// v();
+
+// function wtf(...args){
+//     return JSON.stringify(args);
+// }
+
+// console.log(wtf(1,2,3));
+
+// const obj = {n: 'Vu',a: 18};
+
+// console.log(Object.keys(obj));
+
+// const arr = [2,3,4];
+
+// console.log(arr.slice(2,5));
+
+const test = {};
+
+test['v'] = 5;
+
+console.log(test['v']);
+
+if(Object(test).keys.has('v')) console.log(3);
+
+
+
+
 
 
 
